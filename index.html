@@ -711,34 +711,7 @@
   </section>
 
   <!-- ── TESTIMONIOS ─────────────────────────── -->
-  <section id="testimonios" class="w-full bg-surface-container-low py-section-gap-mobile md:py-section-gap-desktop" aria-label="Opiniones de clientes">
-    <div class="max-w-container-max mx-auto px-gutter">
-      <div class="text-center mb-16 reveal">
-        <span class="inline-block border border-secondary px-3 py-1 font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-4">Confianza</span>
-        <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Lo que dicen nuestros clientes</h2>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <blockquote class="testimonial-card reveal">
-          <p class="font-body-lg text-body-lg text-on-surface italic mb-6">«Un oasis en Cartagena. Me ayudaron a elegir un oud para regalo y el resultado fue espectacular. Trato impecable.»</p>
-          <footer>
-            <cite class="font-label-sm text-label-sm text-secondary uppercase tracking-widest not-italic">María G. — Cliente habitual</cite>
-          </footer>
-        </blockquote>
-        <blockquote class="testimonial-card reveal reveal-delay-1">
-          <p class="font-body-lg text-body-lg text-on-surface italic mb-6">«Compré incienso y piezas para el salón. La tienda transmite calma y calidad; se nota que conocen cada producto.»</p>
-          <footer>
-            <cite class="font-label-sm text-label-sm text-secondary uppercase tracking-widest not-italic">Antonio R. — Diseño de interiores</cite>
-          </footer>
-        </blockquote>
-        <blockquote class="testimonial-card reveal reveal-delay-2">
-          <p class="font-body-lg text-body-lg text-on-surface italic mb-6">«Las cestas de dulces orientales fueron el éxito de nuestra celebración familiar. Volveré sin duda.»</p>
-          <footer>
-            <cite class="font-label-sm text-label-sm text-secondary uppercase tracking-widest not-italic">Laura M. — Eventos y regalos</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
+
 
   <!-- ── ESTADÍSTICAS ────────────────────────── -->
   <!-- ── SELLO DE CONFIANZA ─────────────────── -->
@@ -980,6 +953,65 @@
   </section>
 
 </main>
+
+
+  <!-- ======= TESTIMONIOS ======= -->
+  <section id="testimonios" class="w-full max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop">
+
+    <div class="text-center mb-14 reveal">
+      <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Lo que dicen nuestros clientes</span>
+      <h2 class="font-headline-lg text-headline-lg text-primary mt-3">Rese&ntilde;as en Google</h2>
+    </div>
+
+    <div id="google-summary" class="hidden items-center justify-center gap-4 mb-10 flex-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 0 92 30" aria-label="Google" role="img">
+        <text y="24" font-family="Arial,sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5">
+          <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+        </text>
+      </svg>
+      <span id="avg-score" class="font-headline-md text-headline-md text-primary leading-none"></span>
+      <div id="avg-stars" class="flex gap-0.5 items-center"></div>
+      <a id="total-link" href="#" target="_blank" rel="noopener"
+         class="font-label-sm text-label-sm text-secondary uppercase tracking-widest hover:text-primary transition-colors hover:underline underline-offset-4"></a>
+    </div>
+
+    <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="border border-outline-variant/30 p-8 space-y-3 animate-pulse">
+        <div class="flex gap-1 mb-4"><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div></div>
+        <div class="h-2.5 bg-outline-variant/20 w-full"></div><div class="h-2.5 bg-outline-variant/20 w-5/6"></div><div class="h-2.5 bg-outline-variant/20 w-4/6"></div>
+        <div class="flex items-center gap-3 mt-6 pt-4 border-t border-outline-variant/20">
+          <div class="w-9 h-9 rounded-full bg-outline-variant/20 shrink-0"></div>
+          <div class="flex-1"><div class="h-2 bg-outline-variant/20 w-24 mb-1.5"></div><div class="h-2 bg-outline-variant/15 w-16"></div></div>
+        </div>
+      </div>
+      <div class="border border-outline-variant/30 p-8 space-y-3 animate-pulse hidden md:block">
+        <div class="flex gap-1 mb-4"><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div></div>
+        <div class="h-2.5 bg-outline-variant/20 w-full"></div><div class="h-2.5 bg-outline-variant/20 w-5/6"></div><div class="h-2.5 bg-outline-variant/20 w-4/6"></div>
+        <div class="flex items-center gap-3 mt-6 pt-4 border-t border-outline-variant/20">
+          <div class="w-9 h-9 rounded-full bg-outline-variant/20 shrink-0"></div>
+          <div class="flex-1"><div class="h-2 bg-outline-variant/20 w-24 mb-1.5"></div><div class="h-2 bg-outline-variant/15 w-16"></div></div>
+        </div>
+      </div>
+      <div class="border border-outline-variant/30 p-8 space-y-3 animate-pulse hidden md:block">
+        <div class="flex gap-1 mb-4"><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div><div class="w-3.5 h-3.5 bg-outline-variant/25"></div></div>
+        <div class="h-2.5 bg-outline-variant/20 w-full"></div><div class="h-2.5 bg-outline-variant/20 w-5/6"></div><div class="h-2.5 bg-outline-variant/20 w-4/6"></div>
+        <div class="flex items-center gap-3 mt-6 pt-4 border-t border-outline-variant/20">
+          <div class="w-9 h-9 rounded-full bg-outline-variant/20 shrink-0"></div>
+          <div class="flex-1"><div class="h-2 bg-outline-variant/20 w-24 mb-1.5"></div><div class="h-2 bg-outline-variant/15 w-16"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-10 reveal reveal-delay-1">
+      <a id="all-reviews-link" href="https://www.google.com/maps/search/Super+Assil+Cartagena"
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 px-8 py-3 border border-primary text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary hover:border-secondary hover:text-white transition-all duration-300">
+        <span class="material-symbols-outlined" style="font-size:16px">open_in_new</span>
+        Ver todas las rese&ntilde;as en Google
+      </a>
+    </div>
+
+  </section>
 
 <!-- ======= FOOTER ======= -->
 <footer class="w-full bg-surface-container border-t border-outline-variant py-section-gap-mobile md:py-section-gap-desktop px-gutter" role="contentinfo">
@@ -1226,6 +1258,119 @@
     document.getElementById('cookie-accept').addEventListener('click', () => dismiss('all'));
     document.getElementById('cookie-reject').addEventListener('click', () => dismiss('essential'));
   })();
+
+  /* ============================================================
+     GOOGLE PLACES REVIEWS — automatico
+     Para activar, sustituye los dos valores de abajo:
+       PLACE_ID: https://developers.google.com/maps/documentation/javascript/place-id
+       API_KEY:  https://console.cloud.google.com  (Maps JavaScript API activada)
+  ============================================================ */
+  (function () {
+    var PLACE_ID = 'TU_PLACE_ID_AQUI';
+    var API_KEY  = 'TU_API_KEY_AQUI';
+
+    function starsSVG(n) {
+      var out = '';
+      for (var i = 0; i < 5; i++) {
+        var c = i < n ? '#B89150' : '#d1cdc7';
+        out += '<svg width="15" height="15" viewBox="0 0 24 24" fill="' + c + '" aria-hidden="true">'
+             + '<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77'
+             + 'l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
+      }
+      return out;
+    }
+
+    function timeAgo(ts) {
+      var d = Math.floor(Date.now() / 1000) - ts;
+      if (d < 86400)    return 'Hoy';
+      if (d < 2592000)  return 'Hace ' + Math.floor(d / 86400) + ' días';
+      if (d < 31536000) return 'Hace ' + Math.floor(d / 2592000) + ' meses';
+      return 'Hace ' + Math.floor(d / 31536000) + ' años';
+    }
+
+    function buildCard(r) {
+      var init = r.author_name ? r.author_name.charAt(0).toUpperCase() : '?';
+      var av = r.profile_photo_url
+        ? '<img src="' + r.profile_photo_url + '" alt="" class="w-9 h-9 rounded-full object-cover border border-outline-variant/20" loading="lazy">'
+        : '<span class="w-9 h-9 rounded-full bg-surface-container-low border border-outline-variant/20 flex items-center justify-center font-label-sm text-label-sm text-secondary shrink-0">' + init + '</span>';
+      var txt = r.text ? (r.text.length > 220 ? r.text.slice(0, 217) + '…' : r.text) : '';
+      return '<blockquote class="border border-outline-variant/30 p-8 flex flex-col gap-4 reveal">'
+        + '<div class="flex items-center gap-0.5">' + starsSVG(r.rating) + '</div>'
+        + (txt ? '<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed flex-1">“' + txt + '”</p>' : '')
+        + '<footer class="flex items-center gap-3 pt-4 border-t border-outline-variant/20 mt-auto">'
+        + av + '<div class="min-w-0">'
+        + '<cite class="font-label-sm text-label-sm text-primary not-italic block truncate">' + (r.author_name || 'Cliente') + '</cite>'
+        + '<time class="text-xs text-on-surface-variant/60">' + timeAgo(r.time) + '</time>'
+        + '</div></footer></blockquote>';
+    }
+
+    function renderReviews(reviews, rating, total, mapsUrl) {
+      var grid = document.getElementById('reviews-grid');
+      var summ = document.getElementById('google-summary');
+      if (!grid) return;
+      var sorted = reviews.slice().sort(function (a, b) {
+        return b.rating !== a.rating ? b.rating - a.rating : b.time - a.time;
+      }).slice(0, 6);
+      if (!sorted.length) {
+        grid.innerHTML = '<p class="col-span-3 text-center py-10 text-on-surface-variant/60">Aún no hay reseñas.</p>';
+        return;
+      }
+      grid.innerHTML = sorted.map(buildCard).join('');
+      if (typeof revealObs !== 'undefined') {
+        document.querySelectorAll('#reviews-grid .reveal').forEach(function (el) { revealObs.observe(el); });
+      }
+      if (summ) {
+        document.getElementById('avg-score').textContent = parseFloat(rating).toFixed(1);
+        document.getElementById('avg-stars').innerHTML = starsSVG(Math.round(rating));
+        var lnk = document.getElementById('total-link');
+        if (lnk) { lnk.textContent = total + ' reseñas en Google'; lnk.href = mapsUrl || '#'; }
+        var aLnk = document.getElementById('all-reviews-link');
+        if (aLnk && mapsUrl) aLnk.href = mapsUrl;
+        summ.classList.remove('hidden');
+        summ.classList.add('flex');
+      }
+    }
+
+    function showSetupMsg(msg) {
+      var grid = document.getElementById('reviews-grid');
+      if (!grid) return;
+      var m = msg || 'Reemplaza <strong>TU_PLACE_ID_AQUI</strong> y <strong>TU_API_KEY_AQUI</strong> en el bloque de configuración de este archivo HTML para mostrar las reseñas reales de Google.';
+      grid.innerHTML = '<div class="col-span-3 border border-secondary/30 bg-surface-container-low p-8">'
+        + '<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-3">Configuración pendiente</p>'
+        + '<p class="font-body-md text-body-md text-on-surface-variant mb-5">' + m + '</p>'
+        + '<div class="flex flex-col gap-2">'
+        + '<a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank" class="font-body-md text-body-md text-secondary hover:text-primary underline">Obtener API key de Google Maps ↗</a>'
+        + '<a href="https://developers.google.com/maps/documentation/javascript/place-id" target="_blank" class="font-body-md text-body-md text-secondary hover:text-primary underline">Encontrar el Place ID de tu negocio ↗</a>'
+        + '</div></div>';
+    }
+
+    function callAPI() {
+      var el = document.createElement('div');
+      var svc = new google.maps.places.PlacesService(el);
+      svc.getDetails(
+        { placeId: PLACE_ID, fields: ['name', 'rating', 'user_ratings_total', 'reviews', 'url'] },
+        function (place, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK && place && place.reviews) {
+            renderReviews(place.reviews, place.rating, place.user_ratings_total, place.url);
+          } else {
+            showSetupMsg('No se pudieron cargar las reseñas (estado: ' + status + '). Verifica el Place ID y los permisos de la API key.');
+          }
+        }
+      );
+    }
+
+    if (PLACE_ID !== 'TU_PLACE_ID_AQUI' && API_KEY !== 'TU_API_KEY_AQUI') {
+      window.__gReviewsInit = callAPI;
+      var sc = document.createElement('script');
+      sc.async = true;
+      sc.src = 'https://maps.googleapis.com/maps/api/js?key=' + API_KEY + '&libraries=places&callback=__gReviewsInit&loading=async';
+      sc.onerror = function () { showSetupMsg('Error al cargar la API de Google Maps. Verifica que la API key esté activa.'); };
+      document.head.appendChild(sc);
+    } else {
+      showSetupMsg();
+    }
+  })();
+
 </script>
 </body>
 </html>
