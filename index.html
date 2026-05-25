@@ -389,7 +389,7 @@
     </a>
     <!-- Hamburger (mobile only) -->
     <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"
-      class="md:hidden w-10 h-10 flex items-center justify-center text-primary hover:text-secondary transition-colors">
+      class="lg:hidden w-10 h-10 flex items-center justify-center text-primary hover:text-secondary transition-colors">
       <span class="material-symbols-outlined" id="menu-icon">menu</span>
     </button>
   </div>
@@ -986,7 +986,7 @@
   <!-- Footer bottom bar -->
   <div class="max-w-container-max mx-auto border-t border-outline-variant pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
     <p class="font-body-md text-body-md text-on-surface-variant/50 text-sm">
-      &copy; 2026 Super Assil. Todos los derechos reservados.
+      &copy; 2025 Super Assil. Todos los derechos reservados.
     </p>
     <div class="flex flex-wrap justify-center gap-6">
       <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">Política de Privacidad</a>
@@ -995,6 +995,20 @@
     </div>
   </div>
 </footer>
+
+<!-- ======= COOKIE CONSENT (LOPD/GDPR) ======= -->
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[9998] bg-primary text-on-primary px-6 py-5 md:flex md:items-center md:justify-between gap-8 border-t-2 border-secondary" role="alertdialog" aria-live="polite" aria-label="Aviso de cookies" style="display:none">
+  <div class="mb-4 md:mb-0">
+    <p class="font-body-md text-body-md text-on-primary/90 max-w-2xl">
+      Usamos cookies propias y de terceros para mejorar tu experiencia. Al seguir navegando, aceptas nuestra
+      <a href="#" class="text-secondary-container underline hover:text-secondary-fixed transition-colors">Política de Cookies</a>.
+    </p>
+  </div>
+  <div class="flex flex-wrap gap-3 shrink-0">
+    <button id="cookie-reject" class="px-5 py-2.5 border border-on-primary/30 text-on-primary/70 font-label-sm text-label-sm uppercase tracking-widest hover:border-secondary hover:text-secondary-container transition-colors">Solo esenciales</button>
+    <button id="cookie-accept" class="px-6 py-2.5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-container hover:text-on-secondary-container transition-colors">Aceptar todas</button>
+  </div>
+</div>
 
 <!-- ======= FLOATING WHATSAPP ======= -->
 <a href="https://wa.me/34600000000?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos."
@@ -1147,6 +1161,25 @@
       btn.disabled = false;
     }, 400);
   });
+
+  /* ---- Cookie Consent ---- */
+  (function () {
+    const banner = document.getElementById('cookie-banner');
+    if (!localStorage.getItem('sa_cookie_choice')) {
+      banner.style.display = 'flex';
+      document.body.style.paddingBottom = banner.offsetHeight + 'px';
+    }
+    function dismiss(choice) {
+      localStorage.setItem('sa_cookie_choice', choice);
+      banner.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
+      banner.style.transform = 'translateY(100%)';
+      banner.style.opacity = '0';
+      document.body.style.paddingBottom = '';
+      setTimeout(() => banner.remove(), 400);
+    }
+    document.getElementById('cookie-accept').addEventListener('click', () => dismiss('all'));
+    document.getElementById('cookie-reject').addEventListener('click', () => dismiss('essential'));
+  })();
 </script>
 </body>
 </html>
