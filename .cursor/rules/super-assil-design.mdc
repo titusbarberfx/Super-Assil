@@ -1,0 +1,19 @@
+---
+description: Design system Super Assil (Stitch) — aplicar en HTML/Tailwind
+globs: "**/*.{html,css,js}"
+alwaysApply: false
+---
+
+# Super Assil — reglas de diseño
+
+Lee `DESIGN.md` antes de cambiar UI.
+
+- **Estilo:** minimalismo de lujo, luz mediterránea + perfumería árabe; calma y espacio olfativo visual.
+- **Colores:** fondo off-white `#fbf9f9`; primario carbón `#000000`; acento oro `secondary` `#79591d` solo en CTAs y detalles.
+- **Tipografía:** titulares `Libre Caslon Text` (`headline-*`); cuerpo `Hanken Grotesk` (`body-*`); labels `label-sm` en mayúsculas con tracking.
+- **Layout:** grid 12 col desktop / 4 mobile; "gallery view"; padding vertical 120px desktop / 64px mobile; no saturar — aumentar padding si hace falta.
+- **Profundidad:** sin drop shadows; capas tonales y bordes finos `outline` / oro 0.5px; modales con wash fullscreen 95% opacidad.
+- **Formas:** `borderRadius` 0 (sharp); no redondear botones/cards salvo iconos circulares si ya existen.
+- **Componentes:** botón primario sólido carbón texto blanco uppercase; secundario ghost 1px borde; cards sin borde/sombra; chips rectangulares borde oro; nav logo centrado; product tiles con hover-zoom en imagen.
+
+Al mejorar para Claude/Cursor: cambios pequeños y coherentes con `code.html` existente.

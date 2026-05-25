@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(not exist *)",
+      "Bash(mkdir -p \"/mnt/c/Users/santi/Downloads/stitch_super_assil_hogar_y_perfumer_a/.claude\")",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
